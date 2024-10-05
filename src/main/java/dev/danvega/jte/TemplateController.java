@@ -18,8 +18,9 @@ public class TemplateController {
 
     @GetMapping("/team")
     public String team(Model model) {
-        List<String> teamMembers = Arrays.asList("Alice", "Bob", "Charlie", "David");
+        List<String> teamMembers = Arrays.asList("Alice", "Bob", "Charlie", "David", "Borelli");
         model.addAttribute("teamMembers", teamMembers);
+        model.addAttribute("username", "John Doe");
         return "pages/team";
     }
 
